@@ -40,7 +40,8 @@ public class GetFloatInputTest {
         test("1.0", 1F);
     }
 
-    @Test(expected=NoSuchElementException.class)
+     //NoSuchElementException
+    @Test(expected=NumberFormatException.class)
     public void test7() {
         test("_", null);
     }
